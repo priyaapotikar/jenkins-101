@@ -1,0 +1,7 @@
+When you create new user in ubuntu ..must change in sshd_config file
+Password authentication
+
+/etc/ssh/sshd_config
+systemctl restart ssh.service
+ vim /etc/ssh/sshd_config
+PasswordAuthentication Yes

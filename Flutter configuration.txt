@@ -1,0 +1,101 @@
+   apt install make
+   make --version
+   sudo apt install build-essential
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> /home/test/.profile
+   brew
+   brew doctor...Your system is ready to brew.
+   brew tap leoafarias/fvm
+   brew install fvm
+   fvm install 3.0.4
+   fvm use 3.0.4 (fvm list)
+   brew install gcc
+   dart pub global activate fvm
+   sudo snap install flutter --classic
+   flutter sdk-path
+   dart pub global activate fvm
+   export PATH="$PATH":"$HOME/.pub-cache/bin" ....set path
+   source ~/.bashrc ....relocate 
+   which fvm
+   fvm version 2.4.1
+   sudo apt install android-sdk android-sdk-platform-33
+   java_home --path
+   export
+   export PATH="$PATH":"$JAVA_HOME/Library/Java/JavaVirtualMachines/"
+
+
+  /home/test/DevTools/Android/cmdline-tools/cmdline-tools/bin ...sdkmanager path
+
+	install gradle 	
+	wget https://services.gradle.org/distributions/gradle-${VERSION}-bin.zip -P /tmp
+	sudo unzip -d /opt/gradle /tmp/gradle-${VERSION}-bin.zip
+	sudo ln -s /opt/gradle/gradle-${VERSION} /opt/gradle/latest
+	Setting up the Environment Variables
+	sudo nano /etc/profile.d/gradle.sh
+	export GRADLE_HOME=/opt/gradle/latest
+	export PATH=${GRADLE_HOME}/bin:${PATH}
+	sudo chmod +x /etc/profile.d/gradle.sh
+	source /etc/profile.d/gradle.sh
+	gradle -v
+	8.2
+	build.gradle---chk this file in grocerybabu-mobileapp/android
+
+
+
+	/usr/lib/android-sdk---accept all licenses (sdkmanager --licenses)
+
+
+	sudo chmod -R 0777 test
+	sudo chown test:test mnt/ -R
+	/home/ubuntu/grocerybabu-mobileapp/android
+	##to find directory in linux 
+	find / -type d -name "dir-name-here"
+
+
+	##add key.properties in grocerybabu-mobileapp/android
+	##add key.jks path in key.properties
+
+
+
+	##set path in ~/.bashrc file 
+
+
+	DEV_TOOLS="/home/jenkins/DevTools"
+	JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
+	export JAVA_HOME
+	PATH="$JAVA_HOME/bin:$PATH"
+
+
+	#fvm path
+	export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+
+	#JAVA path
+	DEV_TOOLS="/home/jenkins/DevTools"
+	JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
+	export JAVA_HOME
+	PATH="$JAVA_HOME/bin:$PATH"
+
+	# Export the Android SDK path
+	export ANDROID_HOME="/usr/lib/android-sdk"
+	export PATH=$PATH:$ANDROID_HOME/tools/bin
+	export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+	#
+	export ANDROID_SDK_ROOT=/usr/lib/android-sdk
+
+	# Android - SDK Tools & Platform Tools
+	export ANDROID_HOME=/usr/lib/android-sdk
+	export PATH=/usr/lib/android-sdk/platform-tools:/usr/lib/android-sdk/cmdline-tools/tools:/usr/lib/android-sdk/cmdline-tools/tools/bin:${PATH}
+                               
+	source ~/.bashrc
+	
+	
+refer the following link	
+	
+https://medium.com/globant/flutter-jenkins-getting-started-4d2e036567b
+https://taylankasap.medium.com/how-to-setup-flutter-development-environment-for-android-on-linux-i-mean-windows-261552d79031#:~:text=brew%20tap%20leoafarias%2Ffvmbrew%20install%20fvm%23%20You%20should%20now
+https://medium.com/globant/flutter-jenkins-getting-started-4d2e036567b
+https://medium.com/@barcelos.ds/install-openjdk-11-lts-in-the-ubuntu-20-04-lts-2c06f17c990
+https://medium.com/@barcelos.ds/install-openjdk-11-lts-in-the-ubuntu-20-04-lts-2c06f17c990
+https://medium.com/@barcelos.ds/install-android-sdk-in-the-ubuntu-20-04-lts-without-android-studio-1b629924d6c5
+

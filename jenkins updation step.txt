@@ -1,0 +1,28 @@
+documentation of jenkins
+work on backup plugin
+updatation of jenkins
+Jenkins server update
+
+	cd /usr/share/java
+    ls -l
+    mv jenkins.war jenkins.war.old1
+    sudo mv jenkins.war jenkins.war.old1
+    ls -l
+    pwd
+    cd
+    ls -l
+    sudo mv jenkins.war jenkins.war.old
+    ls -l
+    sudo mv jenkins.war /usr/share/java/
+    cd /usr/share/java
+    ls -l
+    sudo chown -R root:root jenkins.war
+    ls -l
+    systemctl restart nginx
+    cd /usr/share/java
+    ls -l
+    sudo systemctl restart jenkins
+    sudo su - jenkins
+    cat /etc/issue --to check ubuntu os
+	cat /etc/os-release ---to check os
+	

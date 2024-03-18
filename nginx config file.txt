@@ -1,0 +1,58 @@
+nginx file configuration
+/etc/nginx/sites-available$ vi pos.pandoarch.com
+########## check listen port, ssl certificate path, server name(website name)#########
+# Default server configuration
+server {
+        # listen 80 default_server;
+        # listen [::]:80 default_server;
+
+        # SSL configuration
+        #
+        listen 443 ssl;
+        listen [::]:443 ssl;
+        # include snippets/snakeoil.conf;
+        ssl on;
+        ssl_certificate /etc/ssl/pandoarch.com/pos.pem;
+        ssl_certificate_key /etc/ssl/pandoarch.com/pos.key;
+        root /var/www/POS_laravel/public;
+
+        # Add index.php to the list if you are using PHP
+        index index.php index.html index.htm index.nginx-debian.html;
+
+        server_name posalpha.pandoarch.com;
+
+        location / {
+                try_files $uri $uri/ /index.php?$query_string;
+        }
+
+
+
+        # pass PHP scripts to FastCGI server
+        #
+        location ~ \.php$ {
+                include snippets/fastcgi-php.conf;
+
+        #       # With php-fpm (or other unix sockets):
+                fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;(php version)
+        #       # With php-cgi (or other tcp sockets):
+        #       fastcgi_pass 127.0.0.1:9000;
+        }
+
+        location ~ /\.ht {
+                deny all;
+        }
+
+
+        ssl_ciphers "EECDH+AESGCM:EDH+AESGCM:AES256+EECDH:AES256+EDH:@SECLEVEL=1";
+
+-----------------------------------------------------------------------------------------
+
+
+###creat symbolic link
+ln -s source destination
+source:- config file(path of config file in sites-available)
+destination:- create config file link in sites-enable
+
+
+
+
